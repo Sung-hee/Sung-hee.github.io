@@ -162,7 +162,7 @@
           <div class="col-lg-8 mx-auto">
             <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
             <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-            <form name="sentMessage" id="contactForm" novalidate>
+            <form method="POST" name="sentMessage" id="contactForm" novalidate action="http://formspree.io/klpoik@naver.com">
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls">
                   <label>Name</label>
@@ -173,7 +173,7 @@
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls">
                   <label>Email Address</label>
-                  <input class="form-control" id="email" type="email" placeholder="Email Address" required data-validation-required-message="Please enter your email address.">
+                  <input class="form-control" id="email" name="email" type="email" placeholder="Email Address" required data-validation-required-message="Please enter your email address.">
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
@@ -187,7 +187,7 @@
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls">
                   <label>Message</label>
-                  <textarea class="form-control" id="message" rows="5" placeholder="Message" required data-validation-required-message="Please enter a message."></textarea>
+                  <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message" required data-validation-required-message="Please enter a message."></textarea>
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
